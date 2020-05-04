@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3 part7 js</title>
+</head>
+
+<body>
+    <div>
+        <h1>Exerice 3</h1>
+        <p>Refaire le premier exercice en utilisant une fonction fléchée.</p>
+    </div>
+    <div>
+        <form>
+            <input type="text" id="firstNumber" placeholder="entrer un chiffre">
+            <input type="text" id="secondNumber" placeholder="entrer un chiffre">
+            <input type="text" id="answer" placeholder="résultat" readonly>
+            <button type="button" id="myButton">Multiplier</button>
+        </form>
+    </div>
+    <script>
+
+        let idFirstNumber = document.getElementById('firstNumber');
+        let idSecondNumber = document.getElementById('secondNumber');
+        let idAnswer = document.getElementById('answer');
+        let idButton = document.getElementById('myButton');
+
+        // function multiplyNumber(nb1, nb2) {
+        //     return idAnswer.value = (nb1 * nb2);
+        // }
+        let multiplyNumber = (idFirstNumber, idSecondNumber) => idAnswer.value = (idFirstNumber * idSecondNumber);
+
+        idButton.addEventListener('click', function() {
+            multiplyNumber(idFirstNumber.value, idSecondNumber.value);
+        });
+
+    </script>
+</body>
+
+</html>

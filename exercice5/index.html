@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex5 part7 js</title>
+</head>
+
+<body>
+    <h1>Exercice 5</h1>
+    <p>Traduire la fonction en fonction fléchée.</p>
+
+    <script>
+      let getStringLength = string => {
+            let stringLength;
+            if (string.length === 1) {
+                stringLength = 'La chaîne contient qu\'un seul caractère ';
+            } else {
+                stringLength = `La chaîne contient ${string.length} caractères`;
+            }
+            return stringLength;
+        }
+
+        // let getStringLength = string => { let stringLength = string.length === 1 ? 'La chaîne contient qu\'un seul caractère ' : `La chaîne contient ${string.length} caractères`};
+        console.log(getStringLength('i'));
+    </script>
+
+</body>
+
+</html>
