@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex1 part7 js</title>
+</head>
+
+<body>
+    <div>
+        <h1>Exerice 1</h1>
+        <p>Écrire une fonction qui prend 2 nombres en paramètres et qui retourne le résultat de leur multiplication.</p>
+        <p>Créer un formulaire permettant d'entrer deux nombres. Au clic sur un bouton, lancer votre fonction.</p>
+    </div>
+    <div>
+        <form>
+            <input type="text" id="firstNumber" placeholder="entrer un chiffre">
+            <input type="text" id="secondNumber" placeholder="entrer un chiffre">
+            <input type="text" id="answer" placeholder="résultat" readonly>
+            <button type="button" id="myButton">Multiplier</button>
+        </form>
+    </div>
+    <script>
+        let idFirstNumber = document.getElementById('firstNumber');
+        let idSecondNumber = document.getElementById('secondNumber');
+        let idAnswer = document.getElementById('answer');
+        let idButton = document.getElementById('myButton');
+
+        function multiplyNumber(nb1, nb2) {
+            return idAnswer.value = (nb1 * nb2);
+        }
+
+        idButton.addEventListener('click', function() {
+            multiplyNumber(idFirstNumber.value, idSecondNumber.value)
+        });
+    </script>
+</body>
+
+</html>
